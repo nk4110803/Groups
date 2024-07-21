@@ -1,0 +1,130 @@
+F:\project\Groups\bin\Debug\net6.0\appsettings.Development.json
+F:\project\Groups\bin\Debug\net6.0\appsettings.json
+F:\project\Groups\bin\Debug\net6.0\Groups.exe
+F:\project\Groups\bin\Debug\net6.0\Groups.deps.json
+F:\project\Groups\bin\Debug\net6.0\Groups.runtimeconfig.json
+F:\project\Groups\bin\Debug\net6.0\Groups.dll
+F:\project\Groups\bin\Debug\net6.0\Groups.pdb
+F:\project\Groups\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\project\Groups\obj\Debug\net6.0\Groups.csproj.AssemblyReference.cache
+F:\project\Groups\obj\Debug\net6.0\Groups.GeneratedMSBuildEditorConfig.editorconfig
+F:\project\Groups\obj\Debug\net6.0\Groups.AssemblyInfoInputs.cache
+F:\project\Groups\obj\Debug\net6.0\Groups.AssemblyInfo.cs
+F:\project\Groups\obj\Debug\net6.0\Groups.csproj.CoreCompileInputs.cache
+F:\project\Groups\obj\Debug\net6.0\Groups.MvcApplicationPartsAssemblyInfo.cs
+F:\project\Groups\obj\Debug\net6.0\Groups.MvcApplicationPartsAssemblyInfo.cache
+F:\project\Groups\obj\Debug\net6.0\staticwebassets.build.json
+F:\project\Groups\obj\Debug\net6.0\staticwebassets.development.json
+F:\project\Groups\obj\Debug\net6.0\scopedcss\bundle\Groups.styles.css
+F:\project\Groups\obj\Debug\net6.0\Groups.csproj.CopyComplete
+F:\project\Groups\obj\Debug\net6.0\Groups.dll
+F:\project\Groups\obj\Debug\net6.0\refint\Groups.dll
+F:\project\Groups\obj\Debug\net6.0\Groups.pdb
+F:\project\Groups\obj\Debug\net6.0\Groups.genruntimeconfig.cache
+F:\project\Groups\obj\Debug\net6.0\ref\Groups.dll
+F:\project\Groups\bin\Debug\net6.0\Humanizer.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\project\Groups\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\project\Groups\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+F:\project\Groups\bin\Debug\net6.0\System.Drawing.Common.dll
+F:\project\Groups\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\project\Groups\bin\Debug\net6.0\System.Runtime.Caching.dll
+F:\project\Groups\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\project\Groups\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\project\Groups\bin\Debug\net6.0\System.Windows.Extensions.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\project\Groups\bin\Debug\net6.0\Models.dll
+F:\project\Groups\bin\Debug\net6.0\Models.pdb
+F:\project\Groups\bin\Debug\net6.0\AutoMapper.dll
+F:\project\Groups\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\appsettings.json
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Groups.exe
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Groups.deps.json
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Groups.runtimeconfig.json
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Groups.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Groups.pdb
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Humanizer.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Models.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Models.pdb
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.csproj.AssemblyReference.cache
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.AssemblyInfoInputs.cache
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.AssemblyInfo.cs
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.csproj.CoreCompileInputs.cache
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\scopedcss\bundle\Groups.styles.css
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.csproj.CopyComplete
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.dll
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\refint\Groups.dll
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.pdb
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.genruntimeconfig.cache
+C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\ref\Groups.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\DAL.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\DAL.pdb
