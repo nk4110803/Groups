@@ -1,6 +1,7 @@
 ﻿using DAL.Dtos;
 using DAL.Interface;
 using Microsoft.AspNetCore.Mvc;
+using Models.Models;
 
 namespace Groups.Controllers
 {
@@ -14,14 +15,19 @@ namespace Groups.Controllers
             _dbEvent = dbEvent;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] EventDto _event)
+        [HttpPost("{groupId}")]
+        public async Task<IActionResult> Post([FromBody] EventDto _event, int groupId)
         {
-            bool create = await _dbEvent.createEvent(_event);
+            bool create = await _dbEvent.createEvent(_event, groupId);
             if (create)
                 return Ok();
             return BadRequest();
-
+        }
+        [HttpGet("{id}")]
+        public async Task<Event> Get(int id)
+        {
+            var _event = await _dbEvent.getEventById(id);
+            return _event;
         }
     }
 }

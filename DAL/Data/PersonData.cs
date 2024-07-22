@@ -20,18 +20,17 @@ namespace DAL.Data
             _mapper = mapper;
         }
 
-        /*public async Task<Person> getPersonById(int id)
+        public async Task<Person> getPersonById(int id)
         {
-            var personEntity = await _context.Persons.FindAsync(id);
+            var personEntity = await _context.People.FindAsync(id);
             return personEntity;
-            //var @event = _mapper.Map<Event>(eventEntity);
-            //return @event;
-        }*/
-        /*public async Task<bool> createPerson(PersonDto person)
+        }
+        public async Task<bool> createPerson(PersonDto _person)
         {
-            _context.Persons.Add(_mapper.Map<Person>(person));
+            _context.People.Add(_mapper.Map<Person>(_person));
+            await _context.SaveChangesAsync();
             return true;
-        }*/
+        }
 
     }
 }

@@ -12,10 +12,6 @@ namespace DAL.Dtos
         public string Name { get; set; }
         public string Email { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public virtual ICollection<Event> Events { get; set; }
-        // public virtual ICollection<Event> MyEvents { get; set; }
-        public virtual ICollection<Group> Groups { get; set; }
-        //public virtual ICollection<Group> MyGroups { get; set; }
         public string ProfilePicture { get; set; }
 
     }

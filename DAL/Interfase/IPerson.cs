@@ -10,8 +10,9 @@ namespace DAL.Interface
 {
     public interface IPerson
     {
-        //Task<Person> getPersonById(int id);
-        //Task<bool> createPerson(PersonDto person);
+        Task<Person> getPersonById(int id);
+        Task<bool> createPerson(PersonDto person);
+
     }
 }
 
