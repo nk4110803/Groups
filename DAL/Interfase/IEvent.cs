@@ -10,6 +10,6 @@ namespace DAL.Interface
     public interface IEvent
     {
         Task<Event> getEventById(int id);
-        Task<bool> createEvent(EventDto _event);
+        Task<bool> createEvent(EventDto _event,int groupId);
     }
 }

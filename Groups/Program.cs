@@ -14,6 +14,8 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddDbContext<GroupsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultDataBase")));
 builder.Services.AddScoped<IEvent, EventData>();
+builder.Services.AddScoped<IPerson, PersonData>();
+builder.Services.AddScoped<IGroup, GroupData>();
 
 var app = builder.Build();
 

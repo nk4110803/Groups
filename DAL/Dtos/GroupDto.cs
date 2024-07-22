@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 
 namespace DAL.Dtos
 {
-    internal class GroupDto
+    public class GroupDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public int Meneger { get; set; }
-        public virtual ICollection<Person> Members { get; set; }
-        public virtual ICollection<Event> Events { get; set; }
     }
 }
