@@ -10,11 +10,11 @@ namespace DAL.Interface
 {
     public interface IGroup
     {
-        //Task<List<Event>> getAllEvents(int id);
-        Task<bool> createGroup(GroupDto group);
+        Task<List<EventDto>> getAllEvents(int id);
+        Task<bool> createGroup(GroupDto group,int managerId);
         Task<Group> getGroupById(int id);
-       // Task<bool> AddEventToGroup(int groupId, EventDto newEvent);
-        Task<bool> AddPersonToGroup(int groupId, int personId);
+        Task<bool> AddEventToGroup(int groupId, EventDto newEvent);
+        Task<bool> AddUserToGroup(int groupId, int userId);
 
 
     }

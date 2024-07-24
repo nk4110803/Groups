@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Models.Models;
 
+
 namespace DAL.Data
 {
     public class EventData : IEvent
@@ -35,8 +36,5 @@ namespace DAL.Data
             await _context.SaveChangesAsync();
             return true;
         }
-
-
-
     }
 }

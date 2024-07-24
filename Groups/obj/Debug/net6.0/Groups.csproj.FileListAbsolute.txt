@@ -128,3 +128,6 @@ C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\Groups.genruntimecon
 C:\Users\The user\Downloads\project\Groups\obj\Debug\net6.0\ref\Groups.dll
 C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\DAL.dll
 C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\DAL.pdb
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\BL.dll
+C:\Users\The user\Downloads\project\Groups\bin\Debug\net6.0\BL.pdb

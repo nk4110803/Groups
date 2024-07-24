@@ -12,7 +12,7 @@ namespace Models.Models
         public string Name { get; set; }
         public string Password { get; set; }
         public int Meneger{ get; set; }
-        public virtual ICollection<Person> Members { get; set; }
+        public virtual ICollection<User> Members { get; set; }
         public virtual ICollection<Event> Events { get; set; }
 
     }

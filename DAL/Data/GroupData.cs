@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DAL.Dtos;
 using DAL.Interface;
+using Microsoft.EntityFrameworkCore;
 using Models.Models;
 using System;
 using System.Collections.Generic;
@@ -14,27 +15,33 @@ namespace DAL.Data
     {
         private readonly GroupsContext _context;
         private readonly IMapper _mapper;
-        private readonly IPerson _Person;
-        //private readonly IEvent _event;
 
-        public GroupData(GroupsContext context, IMapper mapper,IPerson person)
+        public GroupData(GroupsContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
-            _Person = person;
-           // _event = @event;
         }
+        // Retrieve the group including its members
 
-        /*public async Task<List<Event>> getAllEvents(int groupId)
+
+        public async Task<List<EventDto>> getAllEvents(int groupId)
         {
-            var groupEntity = await _context.Groups.FindAsync(groupId);
-            //var @group = _mapper.Map<Group>(groupEntity);
-            List<Event> allEvents = (List<Event>)groupEntity.Events;
-            return allEvents;
-        }*/
-        public async Task<bool> createGroup(GroupDto _group)
+            var groupEntity = await _context.Groups
+                .Include(g =>  g.Events)
+                .FirstOrDefaultAsync(g => g.Id == groupId);
+
+            if (groupEntity == null)
+            {
+                throw new ArgumentException($"No group found with ID {groupId}", nameof(groupId));
+            }
+            var eventDtos = groupEntity.Events.Select(e => _mapper.Map<EventDto>(e)).ToList();
+            return eventDtos;
+        }
+        public async Task<bool> createGroup(GroupDto _group, int managerId)
         {
-            _context.Groups.Add(_mapper.Map<Group>(_group));
+            Group @group = _mapper.Map<Group>(_group);
+            @group.Meneger = managerId;
+            _context.Groups.Add(@group);
             await _context.SaveChangesAsync();
             return true;
         }
@@ -44,34 +51,34 @@ namespace DAL.Data
             return groupEntity;
         }
 
-        /*public async Task<bool> AddEventToGroup(int groupId, EventDto newEvent)
+        public async Task<bool> AddEventToGroup(int groupId, EventDto newEvent)
         {
             Group @group = await getGroupById(groupId);
-            await _event.createEvent(newEvent,@group.Id);
             if (@group == null)
                 return false;
+            Event @event = _mapper.Map<Event>(newEvent);
+            await _context.Events.AddAsync(@event);
+            @event.EventGroup=@group;
             if (@group.Events == null)
                 @group.Events = new List<Event>();
-            Event @event = _mapper.Map<Event>(newEvent);
-            @event.EventGroup = @group;
             @group.Events.Add(@event);
             await _context.SaveChangesAsync();
             return true;
-        }*/
+        }
 
 
-        public async Task<bool> AddPersonToGroup(int groupId, int personId)
+        public async Task<bool> AddUserToGroup(int groupId, int userId)
         {
             Group @group = await getGroupById(groupId);
-            Person @person = await _Person.getPersonById(personId);
-            if (@group==null||@person==null)
+            User @user = await _context.Users.FindAsync(userId);
+            if (@group==null|| @user == null)
                 return false;
             if (@group.Members == null)
-                @group.Members = new List<Person>();
-            if (@person.Groups == null)
-                @person.Groups = new List<Group>();
-            @group.Members.Add(@person);
-            @person.Groups.Add(@group);
+                @group.Members = new List<User>();
+            if (@user.Groups == null)
+                @user.Groups = new List<Group>();
+            @group.Members.Add(@user);
+            @user.Groups.Add(@group);
             await _context.SaveChangesAsync();
             return true;
         }

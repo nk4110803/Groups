@@ -9,12 +9,12 @@ using DAL.Dtos;
 
 namespace DAL.Profiles
 {
-    public class PersonProfile : Profile
+    public class UserProfile : Profile
     {
-        public PersonProfile()
+        public UserProfile()
         {
-            CreateMap<PersonDto, Person>();
-            CreateMap<Person, PersonDto>();
+            CreateMap<UserDto, User>();
+            CreateMap<User, UserDto>();
         }
     }
 }

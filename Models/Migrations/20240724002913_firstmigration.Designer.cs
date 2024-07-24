@@ -12,8 +12,8 @@ using Models.Models;
 namespace Models.Migrations
 {
     [DbContext(typeof(GroupsContext))]
-    [Migration("20240720224239_InitialDatabaseSetup")]
-    partial class InitialDatabaseSetup
+    [Migration("20240724002913_firstmigration")]
+    partial class firstmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -24,7 +24,7 @@ namespace Models.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("EventPerson", b =>
+            modelBuilder.Entity("EventUser", b =>
                 {
                     b.Property<int>("ConfirmedArrivalId")
                         .HasColumnType("int");
@@ -36,10 +36,10 @@ namespace Models.Migrations
 
                     b.HasIndex("EventsId");
 
-                    b.ToTable("PersonEvent", (string)null);
+                    b.ToTable("UserEvent", (string)null);
                 });
 
-            modelBuilder.Entity("GroupPerson", b =>
+            modelBuilder.Entity("GroupUser", b =>
                 {
                     b.Property<int>("GroupsId")
                         .HasColumnType("int");
@@ -51,7 +51,7 @@ namespace Models.Migrations
 
                     b.HasIndex("MembersId");
 
-                    b.ToTable("PersonGroup", (string)null);
+                    b.ToTable("UserGroup", (string)null);
                 });
 
             modelBuilder.Entity("Models.Models.Event", b =>
@@ -80,6 +80,9 @@ namespace Models.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Owner")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("EventGroupId");
@@ -95,6 +98,9 @@ namespace Models.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("Meneger")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -108,7 +114,7 @@ namespace Models.Migrations
                     b.ToTable("Groups");
                 });
 
-            modelBuilder.Entity("Models.Models.Person", b =>
+            modelBuilder.Entity("Models.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -127,18 +133,18 @@ namespace Models.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProfilePicture")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("People");
+                    b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("EventPerson", b =>
+            modelBuilder.Entity("EventUser", b =>
                 {
-                    b.HasOne("Models.Models.Person", null)
+                    b.HasOne("Models.Models.User", null)
                         .WithMany()
                         .HasForeignKey("ConfirmedArrivalId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -151,7 +157,7 @@ namespace Models.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("GroupPerson", b =>
+            modelBuilder.Entity("GroupUser", b =>
                 {
                     b.HasOne("Models.Models.Group", null)
                         .WithMany()
@@ -159,7 +165,7 @@ namespace Models.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Models.Models.Person", null)
+                    b.HasOne("Models.Models.User", null)
                         .WithMany()
                         .HasForeignKey("MembersId")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -14,7 +14,7 @@ namespace Models.Models
         public string Description { get; set; }
         public DateTime Date { get; set; }
         public string Location { get; set; }
-        public virtual ICollection<Person> ConfirmedArrival { get; set; }
+        public virtual ICollection<User> ConfirmedArrival { get; set; }
         public Group EventGroup { get; set; }
 
     }

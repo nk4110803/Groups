@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Models.Migrations
 {
-    public partial class InitialDatabaseSetup : Migration
+    public partial class firstmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,8 @@ namespace Models.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Meneger = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -24,19 +25,19 @@ namespace Models.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "People",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    ProfilePicture = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_People", x => x.Id);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -46,6 +47,7 @@ namespace Models.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Owner = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -63,7 +65,7 @@ namespace Models.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PersonGroup",
+                name: "UserGroup",
                 columns: table => new
                 {
                     GroupsId = table.Column<int>(type: "int", nullable: false),
@@ -71,23 +73,23 @@ namespace Models.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PersonGroup", x => new { x.GroupsId, x.MembersId });
+                    table.PrimaryKey("PK_UserGroup", x => new { x.GroupsId, x.MembersId });
                     table.ForeignKey(
-                        name: "FK_PersonGroup_Groups_GroupsId",
+                        name: "FK_UserGroup_Groups_GroupsId",
                         column: x => x.GroupsId,
                         principalTable: "Groups",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PersonGroup_People_MembersId",
+                        name: "FK_UserGroup_Users_MembersId",
                         column: x => x.MembersId,
-                        principalTable: "People",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
-                name: "PersonEvent",
+                name: "UserEvent",
                 columns: table => new
                 {
                     ConfirmedArrivalId = table.Column<int>(type: "int", nullable: false),
@@ -95,17 +97,17 @@ namespace Models.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PersonEvent", x => new { x.ConfirmedArrivalId, x.EventsId });
+                    table.PrimaryKey("PK_UserEvent", x => new { x.ConfirmedArrivalId, x.EventsId });
                     table.ForeignKey(
-                        name: "FK_PersonEvent_Events_EventsId",
+                        name: "FK_UserEvent_Events_EventsId",
                         column: x => x.EventsId,
                         principalTable: "Events",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_PersonEvent_People_ConfirmedArrivalId",
+                        name: "FK_UserEvent_Users_ConfirmedArrivalId",
                         column: x => x.ConfirmedArrivalId,
-                        principalTable: "People",
+                        principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -116,29 +118,29 @@ namespace Models.Migrations
                 column: "EventGroupId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PersonEvent_EventsId",
-                table: "PersonEvent",
+                name: "IX_UserEvent_EventsId",
+                table: "UserEvent",
                 column: "EventsId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_PersonGroup_MembersId",
-                table: "PersonGroup",
+                name: "IX_UserGroup_MembersId",
+                table: "UserGroup",
                 column: "MembersId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PersonEvent");
+                name: "UserEvent");
 
             migrationBuilder.DropTable(
-                name: "PersonGroup");
+                name: "UserGroup");
 
             migrationBuilder.DropTable(
                 name: "Events");
 
             migrationBuilder.DropTable(
-                name: "People");
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Groups");
